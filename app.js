@@ -1,60 +1,43 @@
-
-    b();
-    console.log(a);
-    var a = 'Hello World';
+document.getElementById('demo').innerHTML = 'This is your first answer'
 
 
-    function b(){
-console.log('Called b!')
-    }
+var a=3;
+var b=2;
+var c= a * b;
+console.log(a*b);
 
 
-var a; 
-console.log(a);
+var a = 6;
+var b = 2;
+var c = a - b;
+console.log(a-b);
 
-if (a === undefined){
-    console.log('a is undefined!');
+
+function myFunction(p1,p2){
+   return p1*p1;
 }
-else {
-    console.log('a is defined!');
+console.log(myFunction(2,1))
+
+var res = myFunction(2,1);
+
+console.log(res)
+
+
+var person = {
+        Name: "asif",
+    Address: "Hattigauda",
+    Age: 32,
+    Profession: "SDW",
+getInfo: function (){
+    return this.Name  + " "+ this.Address;
 }
+};
 
-var b;
-console.log(a);
-
-if (b === undefined){
-    console.log('b is undefined')
-}
-else {console.log ('b is defined');
-}
-
-function b() {
-	var myVar;
-    console.log(myVar);
-}
-
-function a() {
-	var myVar = 2;
-    console.log(myVar);
-	b();
-}
-
-var myVar = 1;
-console.log(myVar);
-// a();
-console.log(myVar);
-
-function b(){
-    var myVar;
-    console.log(myVar);
+var Person = function(name, add) {
+    this.Name = name;
+    this.Address = add;
 }
 
-function a(){
-    var myVar =2;
-    console.log(myVar);
-    b();
-}
-var myVar = 1;
-console.log(myVar);
-// a();
-console.log(myVar);
+var p = new Person('Pomba', 'Kusuni')
+
+console.log('p', p)

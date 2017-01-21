@@ -1,12 +1,16 @@
-.element {
-  animation: pulse 5s infinite;
+
+body {
+    background-color: lightblue;
 }
 
-@keyframes pulse {
-  0% {
-    background-color: #001F3F;
-  }
-  100% {
-    background-color: #FF4136;
-  }
+h1 {
+    color: orangered;
+    text-align: center;
 }
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+    
+} 
+
